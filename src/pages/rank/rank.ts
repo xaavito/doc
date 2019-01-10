@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { RankingPage } from '../ranking/ranking';
+
 
 @Component({
   selector: 'page-ranks',
@@ -10,5 +12,7 @@ export class RankPage {
   constructor(public navCtrl: NavController) {
 
   }
-
+  pushPage(){
+    this.navCtrl.push(RankingPage);
+  }
 }
